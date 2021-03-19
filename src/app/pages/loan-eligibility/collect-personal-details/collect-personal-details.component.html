@@ -1,0 +1,45 @@
+<app-header></app-header>
+<app-stepper></app-stepper>
+<div class="container margin-top-10">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Personal Details</h5>
+            <form [formGroup]="personalDetailsForm" autocomplete="off">
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Name</label>
+                            <input type="text" formControlName="username" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" formControlName="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Phone Number</label>
+                            <input type="tel" formControlName="phNumber" class="form-control"
+                                id="exampleInputPassword1">
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Pan Number</label>
+                            <input type="tel" formControlName="panNumber" class="form-control"
+                                id="exampleInputPassword1">
+                        </div>
+                    </div>
+                </div>
+                <button type="button" [disabled]="!personalDetailsForm.valid" class="btn btn-action btn-lg btn-block"
+                    (click)="next()">Next</button>
+            </form>
+        </div>
+    </div>
+</div>

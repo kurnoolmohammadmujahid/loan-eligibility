@@ -1,0 +1,51 @@
+<app-header></app-header>
+<app-stepper></app-stepper>
+<div class="container margin-top-10">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Employement Details</h5>
+            <form [formGroup]="employementDetailsForm" autocomplete="off">
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Place of Work</label>
+                            <input type="text" formControlName="workPlace" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Job Title</label>
+                            <input type="email" formControlName="jobTitle" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Salary per month</label>
+                            <input type="tel" formControlName="salary" class="form-control" id="exampleInputPassword1">
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Loan Amount</label>
+                            <input type="tel" formControlName="loanAmt" class="form-control" id="exampleInputPassword1">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <button type="button" class="btn btn-previous btn-lg btn-block"
+                            (click)="previous()">Previous</button>
+                    </div>
+                    <div class="col-sm">
+                        <button type="button" [disabled]="!employementDetailsForm.valid"
+                            class="btn btn-action btn-lg btn-block" (click)="next()">Next</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

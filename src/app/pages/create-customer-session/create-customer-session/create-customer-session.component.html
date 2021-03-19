@@ -1,0 +1,12 @@
+<p-dialog [(visible)]="display" [transitionOptions]="'0ms'" [style]="{width: '50vw'}">
+    <ng-template pTemplate="header">
+        Mortgage Loan
+    </ng-template>
+    A mortgage loan is a type of secured loan where you can avail funds by providing your asset as collateral to the
+    lender. ... A mortgage is usually a loan sanctioned against an immovable asset like a house or a commercial
+    property. The lender keeps the asset as collateral until the borrower repays the total loan amount.
+    <p-footer>
+        <button type="button" class="btn btn-action btn-lg btn-block"
+        (click)="createSession()">Proceed</button>
+    </p-footer>
+</p-dialog>

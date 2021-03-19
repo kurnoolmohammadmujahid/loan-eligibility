@@ -1,0 +1,141 @@
+<app-header></app-header>
+<app-stepper></app-stepper>
+<div class="container margin-top-10">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Personal Details</h5>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Name</label>
+                        <input type="text" [(ngModel)]="previewObj.username" class="form-control"
+                            id="exampleInputEmail1" aria-describedby="emailHelp" disabled="true">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="exampleInputEmail2">Email address</label>
+                        <input type="email" [(ngModel)]="previewObj.email" class="form-control" id="exampleInputEmail2"
+                            aria-describedby="emailHelp" disabled="true">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Phone Number</label>
+                        <input type="tel" [(ngModel)]="previewObj.phNumber" class="form-control"
+                            id="exampleInputPassword1" disabled="true">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="exampleInputPassword2">Pan Number</label>
+                        <input type="tel" [(ngModel)]="previewObj.panNumber" class="form-control"
+                            id="exampleInputPassword2" disabled="true">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Employement Details</h5>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="exampleInputEmail3">Place of Work</label>
+                        <input type="text" [(ngModel)]="previewObj.workPlace" class="form-control"
+                            id="exampleInputEmail3" aria-describedby="emailHelp" disabled="true">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="exampleInputEmail4">Job Title</label>
+                        <input type="email" [(ngModel)]="previewObj.jobTitle" class="form-control"
+                            id="exampleInputEmail4" aria-describedby="emailHelp" disabled="true">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="exampleInputPassword3">Salary per month</label>
+                        <input type="tel" [(ngModel)]="previewObj.salary" class="form-control"
+                            id="exampleInputPassword3" disabled="true">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="exampleInputPassword4">Loan Amount</label>
+                        <input type="tel" [(ngModel)]="previewObj.loanAmt" class="form-control"
+                            id="exampleInputPassword4" disabled="true">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Property Details</h5>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Area Pincode</label>
+                        <select class="form-control" [(ngModel)]="previewObj.areaPinCode" id="exampleFormControlSelect1"
+                            disabled="true">
+                            <option value="a">Kelambakkam - 603103</option>
+                            <option value="b">Pondicherry - 605001</option>
+                            <option value="c">Chengalpattu - 603001</option>
+                            <option value="d">Valasaravakkam - 600087</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect2">House Age</label>
+                        <select class="form-control" [(ngModel)]="previewObj.houseAge" id="exampleFormControlSelect2"
+                            disabled="true">
+                            <option value="1000">0 to 3 Years</option>
+                            <option value="1200">3 to 5 Years</option>
+                            <option value="1500">5 to 10 Years</option>
+                            <option value="2000">10 to 20 Years</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <label for="exampleInputPassword6">Land Area</label>
+                    <div class="input-group">
+                        <input type="tel" [(ngModel)]="previewObj.landArea" class="form-control"
+                            id="exampleInputPassword6" disabled="true">
+                        <div class="input-group-append">
+                            <span class="input-group-text" id="basic-addon2">@Square feet</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <label for="exampleInputPassword7">Built-up Area</label>
+                    <div class="input-group">
+                        <input type="tel" [(ngModel)]="previewObj.builtUpArea" class="form-control"
+                            id="exampleInputPassword7" disabled="true">
+                        <div class="input-group-append">
+                            <span class="input-group-text" id="basic-addon2">@Square feet</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row margin-top-10">
+                <div class="col-sm">
+                    <button type="button" class="btn btn-previous btn-lg btn-block"
+                        (click)="previous()">Previous</button>
+                </div>
+                <div class="col-sm">
+                    <button type="button" class="btn btn-action btn-lg btn-block" (click)="submit()">Check
+                        Eligibility</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
