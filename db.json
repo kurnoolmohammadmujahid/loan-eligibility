@@ -1,0 +1,59 @@
+{
+  "loanEligibility": [
+    {
+      "id": 1,
+      "personal": [
+        {
+          "username": "",
+          "email": "",
+          "phNumber": "",
+          "panNumber": ""
+        }
+      ],
+      "employee": [
+        {
+          "workPlace": "",
+          "jobTitle": "",
+          "salary": "",
+          "loanAmt": ""
+        }
+      ],
+      "property": [
+        {
+          "areaPinCode": "",
+          "houseAge": "",
+          "landArea": "",
+          "builtUpArea": ""
+        }
+      ]
+    },
+    [
+      {
+        "personal": [
+          {
+            "username": "Mohammad",
+            "email": "mohammad@hcl.com",
+            "phNumber": "9988776655",
+            "panNumber": "ABCDE1234F"
+          }
+        ],
+        "employee": [
+          {
+            "workPlace": "Chennai",
+            "jobTitle": "Developer",
+            "salary": "40000",
+            "loanAmt": "8000000"
+          }
+        ],
+        "property": [
+          {
+            "areaPinCode": "",
+            "houseAge": "",
+            "landArea": "",
+            "builtUpArea": ""
+          }
+        ]
+      }
+    ]
+  ]
+}
